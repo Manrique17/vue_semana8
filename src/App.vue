@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Tareas</router-link> |
+    <router-link to="/agregar">Agregar nueva tarea</router-link>
   </nav>
   <router-view/>
 </template>
@@ -17,14 +17,22 @@
 
 nav {
   padding: 30px;
+  background-color: #213555;
+  margin-bottom: 24px;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #FED049;
+  border-bottom: 2px solid #FED049;
+}
+body{
+  margin: 0px;
 }
 </style>
